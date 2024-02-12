@@ -31,8 +31,10 @@
                         <div class="form-group row">
                           <label class="col-md-2">性別</label>
                              <div class="col-md-10">
-                               <input type="radio" name="gender" value="男">
-                               <input type="radio" name="gender" value="女">
+                               <lavel>男</lavel>
+                               <input type="radio" name="gender" >
+                               <lavel>女</lavel>
+                               <input type="radio" name="gender" >
                              </div>
                         </div>
                         
@@ -49,6 +51,8 @@
                                <textarea class="form-contontrol" name="introduction" cols="50" rows="15">{{old ('introduction')}}</textarea>
                              </div>
                         </div>
+                         @csrf
+                              <input type="submit" class="btn btn-primary" value="更新">
                   </div>
               </div>
           </div>
