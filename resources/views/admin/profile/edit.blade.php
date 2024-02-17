@@ -15,10 +15,10 @@
                        </ul>
                 @endif
                     
-                <form action="{{route('admin.profile.edit')}}" method="post" enctype="multipart/form-data">
+                <form action="{{route('admin.profile.update')}}" method="post" enctype="multipart/form-data">
         
                     <div class="form-group row">
-                        <label class="col-md-2" for="name">氏名</lavel>
+                        <label class="col-md-2" for="name">氏名</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="name" value="{{ $profiles_form->name }}">
                         </div>
@@ -26,18 +26,18 @@
                         
                         
                     <div class="form-group row">
-                        <label class="col-md-2" for="gender">性別</lavel>
+                        <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
-                               <lavel>男</lavel>
+                               <label>男</label>
                                <input type="radio" name="gender" >
-                               <lavel>女</lavel>
+                               <label>女</label>
                                <input type="radio" name="gender" >
                         </div>
                     </div>
                  
                  
                     <div class="form-group row">
-                        <label class="col-md-2" for="hobby">趣味</lavel>
+                        <label class="col-md-2" for="hobby">趣味</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="hobby" value="{{ $profiles_form->hobby }}">
                         </div>
@@ -45,7 +45,7 @@
                         
                          
                     <div class="form-group row">
-                        <label class="col-md-2" for="introduction">自己紹介欄</lavel> 
+                        <label class="col-md-2" for="introduction">自己紹介欄</label> 
                         <div class="col-md-10">
                             <textarea class="form-control" name="introduction" cols="50" rows="15">{{$profiles_form->introduction}}</textarea>
                         </div>
